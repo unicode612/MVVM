@@ -20,14 +20,15 @@ class ViewController: UIViewController {
         apiCall()
     }
     
-    ///initial page settings
+    //MARK: - initial page settings
     func apiCall()  {
 //        viewModel.getListData()
         viewModel.getListData1(param: ["":""])
         closureSetUp()
     }
     
-    ///closure initialize
+
+    //MARK: - closureSetUp
     func closureSetUp()  {
         viewModel.reloadList = { ()  in
             ///UI chnages in main tread
@@ -46,6 +47,8 @@ class ViewController: UIViewController {
     }
 }
 
+
+//MARK: - UITableView
 extension ViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.arrayOfList.count

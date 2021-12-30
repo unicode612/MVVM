@@ -91,11 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				4A12C678277DCF7B004A6FAB /* Library */,
-				4A12C672277DB9C9004A6FAB /* ViewController */,
 				4A12C66F277DB95C004A6FAB /* Utilities */,
 				4A12C66C277DB777004A6FAB /* ViewModel */,
-				4A12C669277DB766004A6FAB /* Model */,
-				4A12C664277DB26B004A6FAB /* Cell */,
+				4A12C672277DB9C9004A6FAB /* ViewController */,
 				4A12C650277DB1AC004A6FAB /* AppDelegate.swift */,
 				4A12C652277DB1AC004A6FAB /* SceneDelegate.swift */,
 				4A12C656277DB1AC004A6FAB /* Main.storyboard */,
@@ -127,6 +125,7 @@
 		4A12C66C277DB777004A6FAB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4A12C669277DB766004A6FAB /* Model */,
 				4A12C66D277DB77F004A6FAB /* ListViewModel.swift */,
 			);
 			path = ViewModel;
@@ -144,6 +143,7 @@
 		4A12C672277DB9C9004A6FAB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4A12C664277DB26B004A6FAB /* Cell */,
 				4A12C654277DB1AC004A6FAB /* ViewController.swift */,
 			);
 			path = ViewController;

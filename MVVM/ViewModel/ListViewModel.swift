@@ -7,6 +7,8 @@
 //
 
 import UIKit
+
+
 class ListViewModel {
     
     ///closure use for notifi
@@ -19,7 +21,8 @@ class ListViewModel {
         }
     }
     
-    ///get data from api
+
+    //MARK: - Code Api Call
     func getListData()  {
         guard let listURL = URL(string: BASE_URL)else {
             return
@@ -37,7 +40,8 @@ class ListViewModel {
         }.resume()
     }
     
-    //using almofire
+   
+    //MARK: - Almofire
     func getListData1(param : NSDictionary) {
         APIClient.showProgress()
         APIClient.getMovieList(param: param) { result in
